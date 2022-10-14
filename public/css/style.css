@@ -1,0 +1,153 @@
+* {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    color: #313131;
+}
+
+iframe {
+    border-radius: 5px;
+}
+
+@media (min-width: 900px) {
+    body {
+        background-color: #fff;
+    }
+
+    .container {
+        margin: 0 auto;
+        background-color: #fff;
+        position: absolute;
+        left: 50%; top: 0;
+        width: 400px;
+        height: auto;
+        margin-left: -450px;
+    }
+
+    iframe {
+        width: 360px;
+        height: 200px;
+    }
+    
+    .top-h2 {
+        margin-left: 20px;
+    }
+    
+    hr {
+        width: 95%;
+    }
+    
+    /* python */
+    .py-text {
+        margin: 0 0 0 20px;
+    }
+    .py-ul {
+        margin: 0 0 0 30px;
+        list-style: none;
+    }
+    .py-ul li {
+        text-align: center;
+    }
+    .py-ul li {
+        margin-bottom: 40px;
+    }
+    .py-ul li:last-child {
+        margin-bottom: 80px;
+    
+    }
+    .py-ul li h5 {
+        margin: 10px;
+    }
+    
+    /* react */
+    .re-text {
+        margin: 0 0 0 20px;
+    }
+    .re-ul {
+        margin: 0 0 0 30px;
+        list-style: none;
+    }
+    .re-ul li {
+        text-align: center;
+    }
+    .re-ul li {
+        margin-bottom: 40px;
+    }
+    .re-ul li:last-child {
+        margin-bottom: 80px;
+    }
+    .re-ul li h5 {
+        margin: 10px;
+    }
+}
+
+@media (min-width: 901px) {
+    body {
+        background-color: #f1f1f1;
+    }
+
+    .container {
+        margin: 0 auto;
+        background-color: #fff;
+        position: absolute;
+        left: 50%; top: 0;
+        width: 900px;
+        height: auto;
+    
+        margin-left: -450px;
+    }
+
+    iframe {
+        width: 460px;
+        height: 260px;
+    }
+    
+    .top-h2 {
+        margin-left: 20px;
+    }
+    
+    hr {
+        width: 95%;
+    }
+    
+    /* python */
+    .py-text {
+        margin: 0 0 0 20px;
+    }
+    .py-ul {
+        margin: 0 0 0 30px;
+        list-style: none;
+    }
+    .py-ul li {
+        text-align: center;
+    }
+    .py-ul li {
+        margin-bottom: 40px;
+    }
+    .py-ul li:last-child {
+        margin-bottom: 80px;
+    
+    }
+    .py-ul li h5 {
+        margin: 10px;
+    }
+    
+    /* react */
+    .re-text {
+        margin: 0 0 0 20px;
+    }
+    .re-ul {
+        margin: 0 0 0 30px;
+        list-style: none;
+    }
+    .re-ul li {
+        text-align: center;
+    }
+    .re-ul li {
+        margin-bottom: 40px;
+    }
+    .re-ul li:last-child {
+        margin-bottom: 80px;
+    }
+    .re-ul li h5 {
+        margin: 10px;
+    }
+}
