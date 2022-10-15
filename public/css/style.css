@@ -60,6 +60,7 @@ hr {
 
 .el {
     word-break: keep-all;
+    margin-left: 20px;
 }
 
 .er {
