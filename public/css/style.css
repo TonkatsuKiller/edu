@@ -1,153 +1,107 @@
 * {
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     color: #313131;
+    user-select: none;
 }
 
-iframe {
+body {
+    background-color: #f1f1f1;
+    -ms-overflow-style: none;
+}
+/* 기능은 살리고 스크롤바는 삭제 + -ms-overflow-style: none; */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: #fff;
+    position: absolute;
+    left: 50%; top: 0;
+    height: auto;
+    padding: 0 20px 0 20px;
+}
+
+img {
+    width: 60%;
+    height: 60px;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    object-fit: contain;
+}
+
+hr {
+    border: 1px solid lightgray;
+    margin: 10px 0 10px 0;
+}
+
+.sec {
+    text-align: center;
+    border: 1px solid lightgray;
+    margin: 10px auto;
     border-radius: 5px;
+    padding: 10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-use-select: none;
+    user-select: none;
+}
+.sec span, .sec img {
+    margin: 0 auto;
+    display: flex;
+
 }
 
-@media (min-width: 900px) {
-    body {
-        background-color: #fff;
-    }
+.er {
+    margin-bottom: 50px;
+}
+.fz {
+    margin-bottom: 200px;
+}
 
-    .container {
-        margin: 0 auto;
-        background-color: #fff;
-        position: absolute;
-        left: 50%; top: 0;
-        width: 400px;
-        height: auto;
-        margin-left: -450px;
-    }
+footer {
+    text-align: center;
+    padding: 20px;
+}
 
-    iframe {
-        width: 360px;
-        height: 200px;
+.go {
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: .2s;
+}
+.go:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+}
+
+.head {
+    margin-bottom: 60px;
+}
+
+/* blue */
+.blue { color: #0085ff; }
+.red { color: #da3434; }
+
+/* mobile */
+@media screen and (min-width: 1000px) {
+    .container { 
+        width: 1000px;
+        margin-left: -500px;
     }
-    
-    .top-h2 {
-        margin-left: 20px;
-    }
-    
-    hr {
-        width: 95%;
-    }
-    
-    /* python */
-    .py-text {
-        margin: 0 0 0 20px;
-    }
-    .py-ul {
-        margin: 0 0 0 30px;
-        list-style: none;
-    }
-    .py-ul li {
-        text-align: center;
-    }
-    .py-ul li {
-        margin-bottom: 40px;
-    }
-    .py-ul li:last-child {
-        margin-bottom: 80px;
-    
-    }
-    .py-ul li h5 {
-        margin: 10px;
-    }
-    
-    /* react */
-    .re-text {
-        margin: 0 0 0 20px;
-    }
-    .re-ul {
-        margin: 0 0 0 30px;
-        list-style: none;
-    }
-    .re-ul li {
-        text-align: center;
-    }
-    .re-ul li {
-        margin-bottom: 40px;
-    }
-    .re-ul li:last-child {
-        margin-bottom: 80px;
-    }
-    .re-ul li h5 {
-        margin: 10px;
+    .sec {
+        width: 60%;
     }
 }
 
-@media (min-width: 901px) {
-    body {
-        background-color: #f1f1f1;
+/* pc */
+@media screen and (max-width: 1000px) {
+    .container { 
+        left: 0;
+        width: 100%;
     }
-
-    .container {
-        margin: 0 auto;
-        background-color: #fff;
-        position: absolute;
-        left: 50%; top: 0;
-        width: 900px;
-        height: auto;
-    
-        margin-left: -450px;
-    }
-
-    iframe {
-        width: 460px;
-        height: 260px;
-    }
-    
-    .top-h2 {
-        margin-left: 20px;
-    }
-    
-    hr {
-        width: 95%;
-    }
-    
-    /* python */
-    .py-text {
-        margin: 0 0 0 20px;
-    }
-    .py-ul {
-        margin: 0 0 0 30px;
-        list-style: none;
-    }
-    .py-ul li {
-        text-align: center;
-    }
-    .py-ul li {
-        margin-bottom: 40px;
-    }
-    .py-ul li:last-child {
-        margin-bottom: 80px;
-    
-    }
-    .py-ul li h5 {
-        margin: 10px;
-    }
-    
-    /* react */
-    .re-text {
-        margin: 0 0 0 20px;
-    }
-    .re-ul {
-        margin: 0 0 0 30px;
-        list-style: none;
-    }
-    .re-ul li {
-        text-align: center;
-    }
-    .re-ul li {
-        margin-bottom: 40px;
-    }
-    .re-ul li:last-child {
-        margin-bottom: 80px;
-    }
-    .re-ul li h5 {
-        margin: 10px;
+    .sec {
+        width: 60%;
     }
 }
