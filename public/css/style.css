@@ -18,7 +18,8 @@ body {
     margin: 0 auto;
     background-color: #fff;
     position: absolute;
-    left: 50%; top: 0;
+    left: 50%;
+    top: 0;
     height: auto 100%;
     padding: 0 20px 0 20px;
 }
@@ -49,7 +50,9 @@ hr {
     -ms-use-select: none;
     user-select: none;
 }
-.sec span, .sec img {
+
+.sec span,
+.sec img {
     margin: 0 auto;
     display: flex;
 
@@ -62,6 +65,7 @@ hr {
 .er {
     margin-bottom: 50px;
 }
+
 .fz {
     margin-bottom: 200px;
 }
@@ -76,6 +80,7 @@ footer {
     border-radius: 5px;
     transition-duration: .2s;
 }
+
 .go:hover {
     transform: scale(1.1);
     box-shadow: 0 0 6px rgba(0, 0, 0, .3);
@@ -85,16 +90,30 @@ footer {
     margin-bottom: 60px;
 }
 
+/* icon */
+.fo {
+    cursor: pointer;
+}
+.fo:hover span, .fo:hover {
+    color: #0085ff;
+}
+
 /* blue */
-.blue { color: #0085ff; }
-.red { color: #da3434; }
+.blue {
+    color: #0085ff;
+}
+
+.red {
+    color: #da3434;
+}
 
 /* mobile */
 @media screen and (min-width: 1000px) {
-    .container { 
+    .container {
         width: 1000px;
         margin-left: -500px;
     }
+
     .sec {
         width: 60%;
     }
@@ -102,10 +121,11 @@ footer {
 
 /* pc */
 @media screen and (max-width: 1000px) {
-    .container { 
+    .container {
         left: 0;
         width: 100%;
     }
+
     .sec {
         width: 60%;
     }
