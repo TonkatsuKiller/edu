@@ -8,6 +8,7 @@ body {
     background-color: #f1f1f1;
     -ms-overflow-style: none;
 }
+
 /* 기능은 살리고 스크롤바는 삭제 + -ms-overflow-style: none; */
 ::-webkit-scrollbar {
     display: none;
@@ -18,7 +19,7 @@ body {
     background-color: #fff;
     position: absolute;
     left: 50%; top: 0;
-    height: auto;
+    height: auto 100%;
     padding: 0 20px 0 20px;
 }
 
@@ -52,6 +53,10 @@ hr {
     margin: 0 auto;
     display: flex;
 
+}
+
+.el {
+    word-break: keep-all;
 }
 
 .er {

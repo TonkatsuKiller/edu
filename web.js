@@ -7,3 +7,6 @@ app.listen(8001, () => { console.log("listening on 8001") });
 app.get("/", (req, res) => {
     res.render("index.ejs");
 });
+app.get("/diff", (req, res) => {
+    res.render("diff.ejs");
+});
