@@ -9,7 +9,7 @@
 body {
     background-color: #f1f1f1;
     -ms-overflow-style: none;
-    text-align: center;
+    text-align: left;
 }
 
 /* 기능은 살리고 스크롤바는 삭제 + -ms-overflow-style: none; */
@@ -57,6 +57,26 @@ hr {
     margin: 0 auto;
     display: flex;
 
+}
+
+.c {
+    background-color: #f1f1f1;
+    font-family: 'Consolas';
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+code {
+    background-color: #f1f1f1;
+    font-family: 'Consolas';
+    font-weight: bold;
+}
+
+.er {
+    padding: 0;
+    list-style: none;
 }
 
 .el {
