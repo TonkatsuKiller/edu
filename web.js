@@ -10,3 +10,6 @@ app.get("/", (req, res) => {
 app.get("/diff", (req, res) => {
     res.render("diff.ejs");
 });
+app.get("/lang/js", (req, res) => {
+    res.render("lang/js.ejs");
+});
