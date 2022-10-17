@@ -7,12 +7,15 @@ app.listen(8001, () => { console.log("listening on 8001") });
 app.get("/", (req, res) => {
     res.render("index.ejs");
 });
-app.get("/diff", (req, res) => {
+app.get("/tutorial/diff", (req, res) => {
     res.render("diff.ejs");
 });
-app.get("/jswhat", (req, res) => {
+app.get("/tutorial/jswhat", (req, res) => {
     res.render("jswhat.ejs");
 });
-app.get("/def", (req, res) => {
+app.get("/tutorial/py", (req, res) => {
+    res.render("pydef.ejs");
+});
+app.get("/tutorial/def", (req, res) => {
     res.render("def.ejs");
 });

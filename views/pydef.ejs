@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파이썬 기본</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@uiw/icons/fonts/w-icon.css">
+    <!-- js -->
+    <script>
+        function go(url) {
+            window.open().location.href=url;
+        }
+    </script>
+</head>
+<body>
+    <div class="container" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+        <h1 class="head">파이썬 기본</h1>
+        <div class="module el">
+            <h3 style="margin: 0 0 8px 0;"><span class="blue">- 변수 할당</span></h3>
+            <p class="c">
+                cat = "cute"<br>
+                print(cat)<br>
+                <br>
+                > cute
+            </p>
+            <h3 style="margin: 30px 0 8px 0;"><span class="blue">- id()</span></h3>
+            위 함수를 통해 해당 변수의 위치를 알 수 있다.
+            <p class="c">
+                id(cat)<br>
+                <br>
+                > 140186100161536
+            </p>
+            <h3 style="margin: 30px 0 8px 0;"<span class="blue">- 변수 네이밍 [snake case style]</span></h3>
+            <b>*</b>&nbsp;나쁜 방식: myCat<br>
+            <b>*</b>&nbsp;옳은 방식(언더스코어): my_cat<br>
+            <h3 style="margin: 30px 0 8px 0;"<span class="blue">- 변수는 어떤 타입도 담을 수 있다</span></h3>
+            <p class="c">
+                my_cat = "cute"<br>
+                type(my_cat)<br>
+                <br>
+                > &lt;class 'str'&gt;
+            </p>
+            <p class="c">
+                my_cat = 123<br>
+                type(my_cat)<br>
+                <br>
+                > &lt;class 'int'&gt;
+            </p>
+            <h3 style="margin: 30px 0 8px 0;"><span class="blue">논리 연산자</span></h3>
+            && -> and<br>
+            || -> or<br><br>
+            <b>*</b>&nbsp;포함 여부<br>
+            in, not in
+        </div>
+    </div>
+</body>
+</html>
