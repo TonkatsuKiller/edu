@@ -10,6 +10,9 @@ app.get("/", (req, res) => {
 app.get("/diff", (req, res) => {
     res.render("diff.ejs");
 });
+app.get("/jswhat", (req, res) => {
+    res.render("jswhat.ejs");
+});
 app.get("/def", (req, res) => {
     res.render("def.ejs");
 });

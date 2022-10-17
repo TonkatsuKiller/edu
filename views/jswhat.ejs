@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트는 왜 비동기로 해야할까</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@uiw/icons/fonts/w-icon.css">
+    <!-- js -->
+    <script>
+        function go(url) {
+            window.open().location.href=url;
+        }
+    </script>
+</head>
+<body>
+    <div class="container" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+        <h1 class="head">자바스크립트는 왜 비동기로 해야할까</h1>
+        <div class="module el">
+            <h3 style="margin: 0 0 8px 0;"><span class="blue">자바스크립트는 왜 비효율적인 장애짓을 할까..</span></h3>
+            일단 자바스크립트가 싱글 스레드 언어라는걸 알고 있어야됩니다.<br>
+            즉, 한번에 한가지 작업밖에 수행하지 못한다는거죠.<br><br>
+            이게 싱글 스레드 언어가 가진 가장 치명적인 단점입니다.<br><br>
+            이런 단점을 가지게 되어 만약 무거운 작업들이 동기적으로 실행된다면<br>
+            그 이후의 작업들이 시작하는데에 오랜 시간이 걸리겠죠.<br>
+            이런 상황들을 <b>Blocking</b> 이라고 부릅니다.<br><br>
+            그래서 이에 대한 해결책으로 <span class="red">비동기 프로그래밍</span>이 나온겁니다.<br>
+            비동기의 방식대로 프로그램을 실행한다면 더 유동적이고, 더 효율적으로 실행이 되겠죠.<br><br>
+            비동기를 사용하려면 <b>await</b> 함수를 쓰면 됩니다. 예시를 보여드리죠.
+            <p class="c">
+                await fetch(...).then(...)
+            </p>
+            이렇게 함수를 붙이게 되면 fetch문을 실행시키고 이후의 다음 코드로 넘어갑니다.<br>
+            그리고 fetch문의 결과가 알아서 나오겠죠.
+        </div>
+    </div>
+</body>
+</html>

@@ -64,7 +64,7 @@ hr {
     font-family: 'Consolas';
     font-weight: bold;
     padding: 10px;
-    margin-top: 5px;
+    margin: 5px 0 5px 0;
     border-radius: 10px;
 }
 
@@ -134,7 +134,7 @@ footer span {
     color: #da3434;
 }
 
-/* mobile */
+/* pc */
 @media screen and (min-width: 1000px) {
     .container {
         width: 1000px;
@@ -145,11 +145,11 @@ footer span {
     }
 }
 
-/* pc */
+/* mobile */
 @media screen and (max-width: 1000px) {
     .container {
-        left: 0;
         width: 100%;
+        max-width: 375px;
     }
 
     .sec {
