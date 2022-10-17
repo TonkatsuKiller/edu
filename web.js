@@ -16,6 +16,9 @@ app.get("/tutorial/jswhat", (req, res) => {
 app.get("/tutorial/py", (req, res) => {
     res.render("pydef.ejs");
 });
+app.get("/tutorial/go", (req, res) => {
+    res.render("go.ejs");
+});
 app.get("/tutorial/def", (req, res) => {
     res.render("def.ejs");
 });

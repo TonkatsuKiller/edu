@@ -59,6 +59,13 @@ hr {
 
 }
 
+ul {
+    margin: 5px 0 5px 0;
+}
+li:not(:first-child) {
+    margin-top: 10px;
+}
+
 .c {
     background-color: #f1f1f1;
     font-family: 'Consolas';
@@ -72,6 +79,11 @@ code {
     background-color: #f1f1f1;
     font-family: 'Consolas';
     font-weight: bold;
+}
+
+.co {
+    font-family: 'Consolas';
+    color: #006699;
 }
 
 .er {

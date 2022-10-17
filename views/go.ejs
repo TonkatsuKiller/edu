@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go 기본</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@uiw/icons/fonts/w-icon.css">
+    <!-- js -->
+    <script>
+        function go(url) {
+            window.open().location.href=url;
+        }
+    </script>
+</head>
+<body>
+    <div class="container" style="border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+        <h1 class="head">Go 기본</h1>
+        <div class="module el">
+            <span class="w-icon-star-on" style="display: inline;"></span><h3 style="margin: 0 0 8px 0;display: inline;"><span class="blue">&nbsp;기본 예제</span></h3>
+            <p class="c">
+                package main<br>
+                <br>
+                func main() {<br>
+                &nbsp;&nbsp;println("Hello World")<br>
+                }
+            </p>
+            실행: go run [파일명]
+            <h3 style="margin: 30px 0 8px 0;"><span class="blue">- 변수</span></h3>
+            <p class="c"><span class="co">var</span> a <span class="co">int</span></p>
+            <p class="c"><span class="co">var</span> f <span class="co">float32</span> = 11.</p>
+            <p class="c">a = 10</p>
+            <p class="c">f = 12.</p>
+            <p class="c"><span class="co">var</span> i, j, k <span class="co">int</span></p>
+            <p class="c"><span class="co">var</span> i, j, k <span class="co">int</span> = 1, 2, 3</p>
+            뒤에 변수타입을 쓰지 않아도 파이썬마냥 추론이 가능하다.
+            <p class="c"><span class="co">var</span> i = 1</p>
+            <p class="c"><span class="co">var</span> s = "hi"</p>
+            변수를 선언하는 또 다른 방식으로는 Short Assignment Statement(:=)를 사용가능하다.<br>
+            <code><span class="co">var</span> i = 1</code> 대신에 <code>i := 1</code> 라고 쓸수있는것이다.<br>
+            하지만 이 기능은 <span class="red">함수</span> 내에서만 사용가능하다.
+            
+            <h3 style="margin: 30px 0 8px 0;"><span class="blue">- 상수</span></h3>
+            마찬가지로 위에 변수와 동일하다. 다만 달라진 점이 있다면 여러 개의 상수들을 묶을 수 있다는것.<br>
+            <p class="c">
+                <span class="co">const</span> (<br>
+                &nbsp;&nbsp;Visa = "123"    // 0<br>
+                &nbsp;&nbsp;Master = "321" // 1<br>
+                &nbsp;&nbsp;Amex = "231"  // 2<br>
+                )
+            </p>
+
+            <h3 style="margin: 30px 0 8px 0;"><span class="blue">- 문자열</span></h3>
+            문자열 리터럴은 <b>Back Quote(``)</b> 혹은 <b>이중인용부호("")</b>를 사용하여 나타낼수있다.
+            <ul>
+                <li>
+                    <b>Back Quote</b>로 둘러싸인 문자열은 <span class="red">Raw String Literal</span>이라 부르는데<br>
+                    이 안에 있는 문자열은 별도로 해석되지 않고 Raw String 그대로의 값을 갖는다.<br><br>
+                    문자열 안에 \n와 같은게 있어도 그대로 출력한다는 말이다.<br>
+                    복수 라인 문자열 전용.
+                </li>
+                <li>
+                    <b>이중인용부호</b>로 둘러싸인 문자열은 <span class="red">Interpreted String Literal</span>이라 부르는데<br>
+                    이건 복수 라인 문자열에 쓰지 못하고, \n 이런놈들을 해석 가능하다.<br>
+                    이놈으로 여러줄을 쓰려면 +를 넣어야한다.
+                </li>
+            </ul>
+            <h3 style="margin: 30px 0 8px 0;"><span class="blue">- 데이터 타입 변환 (Type Conversion)</span></h3>
+            <p class="c">
+                <span class="co">var</span> i <span class="co">int</span> = 100<br>
+                <span class="co">var</span> f <span class="co">float32</span> = <span class="co">float32</span>(i)<br><br>
+                str := "abc"<br>
+                bytes := []<span class="co">byte</span>(str)<br>
+                str2 := <span class="co">string</span>(bytes)
+            </p>
+            <h3 style="margin: 30px 0 8px 0;"><span class="co">- 포인터 연산자</span></h3>
+            <p class="c">
+                <span class="co">var</span> k <span class="co">int</span> = 10<br>
+                <span class="co">var</span> p = &k // k의 주소를 할당<br>
+                println(*p) // p가 가리키는 주소에 있는 실제 내용을 출력
+            </p>
+        </div>
+    </div>
+</body>
+</html>
